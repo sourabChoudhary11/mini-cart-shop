@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  background-color: rgb(43, 43, 58);
+  padding: 0px 10px;
+  color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav>main {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+
+main>ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+ul>li>a {
+  text-decoration: none;
+  margin: 0px 5px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+li>a:hover {
+  opacity: 0.5;
+  transition: all 0.7s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-family: math;
+  font-weight: 100;
+}
+
+.cartCard {
+  width: 200px;
+  height: 300px;
+  margin: 31px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cartCard:hover {
+  transition: all 0.7s;
+  transform: scale(1.1);
+}
+
+.cartCard>img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.products-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
 }

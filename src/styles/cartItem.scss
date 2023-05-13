@@ -1,0 +1,25 @@
+.cart-item {
+    width: 90%;
+    margin: 1%;
+    display: flex;
+
+    >.first-div {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >img {
+            width: inherit;
+            filter: brightness(0.8);
+        }
+    }
+
+    >.second-div {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}

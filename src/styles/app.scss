@@ -1,0 +1,41 @@
+@import 'ProductContainer.scss';
+@import 'home.scss';
+@import 'productDetails.scss';
+@import 'cart.scss';
+@import 'cartItem.scss';
+@import 'addToCartPopUp.scss';
+
+nav{
+    position: sticky!important;
+    top: 0!important;
+    left: 0!important;
+    background-color: rgb(4, 44, 47)!important;
+    z-index: 4;
+    
+    a{
+        position: relative;
+       &:hover{
+           opacity: 0.3;
+           transition: all 0.7s;
+       }
+       svg{
+           color: darkorange;
+       }
+   }
+}
+
+.cart-count{
+    position: absolute;
+    top: -20%;
+    left: 60%;
+    background-color: white;
+    color: rgb(138, 92, 6);
+    font-weight: bold;
+    width: 15px;
+    height: 15px;
+    font-size: 0.7rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

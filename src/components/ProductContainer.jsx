@@ -9,7 +9,7 @@ const Product = ({ product }) => {
 
   return (
 
-    <Link to={`/product-detail/${id}`} className='product' element={<ProductDetails product={product} />}>
+    <Link to={`/mini-cart-shop/product-detail/${id}`} className='product' element={<ProductDetails product={product} />}>
         <div>
           <img src={images[1]?images[1]:images[0]} alt={title} />
           <h6>Rating <AiFillStar />{rating.toString().includes('.') ? rating : rating.toString().concat('.0')}</h6>

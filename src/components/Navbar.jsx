@@ -24,23 +24,23 @@ const Navbar = () => {
               <Link className="nav-link active" aria-current="page" to="/mini-cart-shop">Products</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/womensFashion">Women Fashion</Link>
+              <Link className="nav-link active" aria-current="page" to="/mini-cart-shop/womensFashion">Women Fashion</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/mensFashion">Men Fashion</Link>
+              <Link className="nav-link active" aria-current="page" to="/mini-cart-shop/mensFashion">Men Fashion</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/home-decoration&furniture">Home-Decoration & Furniture</Link>
+              <Link className="nav-link active" aria-current="page" to="/mini-cart-shop/home-decoration&furniture">Home-Decoration & Furniture</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" to="/sunglasses">Sunglasses</Link>
+              <Link className="nav-link active" to="/mini-cart-shop/sunglasses">Sunglasses</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" to="/fragrances&skincare">Fragrances & Skincare</Link>
+              <Link className="nav-link active" to="/mini-cart-shop/fragrances&skincare">Fragrances & Skincare</Link>
             </li>
           </ul>
           <div>
-            <Link to={'/cart'}><AiOutlineShoppingCart color={'orange'} fontSize={25} />
+            <Link to={'/mini-cart-shop/cart'}><AiOutlineShoppingCart color={'orange'} fontSize={25} />
               <span className='cart-count'>{cartItemsQuantity}</span></Link>
           </div>
         </div>

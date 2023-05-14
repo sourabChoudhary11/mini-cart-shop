@@ -39,14 +39,14 @@ function App() {
           pop && (<AddToCartPopUp />)
         }
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/sunglasses' element={<Sunglasses />} />
-          <Route path='/home-decoration&furniture' element={<HomeDecorationAndFurniture />} />
-          <Route path='/fragrances&skincare' element={<FragrancesAndSkincare />} />
-          <Route path='/womensFashion' element={<WomenFashion />} />
-          <Route path='/mensFashion' element={<MensFashion />} />
-          <Route path='/product-detail/:id' element={<ProductDetails />} />
-          <Route path='/cart' element={<Cart />} />
+          <Route path='/mini-cart-shop' element={<Home />} />
+          <Route path='/mini-cart-shop/sunglasses' element={<Sunglasses />} />
+          <Route path='/mini-cart-shop/home-decoration&furniture' element={<HomeDecorationAndFurniture />} />
+          <Route path='/mini-cart-shop/fragrances&skincare' element={<FragrancesAndSkincare />} />
+          <Route path='/mini-cart-shop/womensFashion' element={<WomenFashion />} />
+          <Route path='/mini-cart-shop/mensFashion' element={<MensFashion />} />
+          <Route path='/mini-cart-shop/product-detail/:id' element={<ProductDetails />} />
+          <Route path='/mini-cart-shop/cart' element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </Fragment>
